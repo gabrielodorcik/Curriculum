@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<style>
+    /* Estilos globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #ffffff;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #7123b9;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+/* Seções principais */
+main section {
+    margin: 40px 0;
+    padding: 20px;
+    background-color: rgb(248, 248, 248);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+main h2 {
+    font-size: 1.8em;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+/* Experiência */
+.experience-item {
+    margin-bottom: 20px;
+}
+
+/* Habilidades */
+.skills-list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills-list li {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+/* Contato */
+#contact p {
+    margin-bottom: 10px;
+}
+
+#contact a {
+    color: #7e16b9;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+#scrollTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+#scrollTopBtn:hover {
+    background-color: #333;
+}
+
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Gabriel Odorcik</h1>
+            <p class="subtitle">Junior Developer | Full Stack JS</p>
+        </div>
+    </header>
+
+    <main>
+        <section id="about">
+            <div class="container">
+                <h2>About me</h2>
+                <p>I'm 20 years old. I'm from Brazil, I live in Campinas/SP. I love technology and the possibilties that we can do with IT is awasome!</p>
+            </div>
+        </section>
+
+        <section id="experience">
+            <div class="container">
+                <h2>Professional Experience</h2>
+                <div class="experience-item">
+                    <h3>IBM - International Bussiness Machine coorp.</h3>
+                    <p><strong>Position:</strong> Intern Developer</p>
+                    <p><strong>Período:</strong> 2023 - Current</p>
+                    <p>At IBM, I worked as member from Platform Team from CIO Servicenow. I acted in different roles in the team, since Front-end developmente for a project, 
+                    I acted with Back-end, on maintance and create new feutures from lagacy apps and new applications and on this period, I acted as Security Analyst from platform,
+                    where I applied compliances in the platform, based on ITSS Standard and ITIL. My position on Security was short, but I learned a lot about compliance, and it is
+                    a role that I'd like to cameback to act in future. I resume my carrear at this moment as Full-Stack Developer. 
+                    </p>
+                </div>
+                <!-- <div class="experience-item">
+                    <h3>Empresa 2</h3>
+                    <p><strong>Cargo:</strong> Lorem ipsum dolor</p>
+                    <p><strong>Período:</strong> 2016 - 2019</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel dolor lorem.</p>
+                </div> -->
+            </div>
+        </section>
+
+        <section id="degree"></section>
+            <div class="container">
+                <h2>Degree</h2>
+                <div class="degree-item">
+                    <h3>Techinician in Development Systems</h3>
+                    <p><strong>School:</strong> ETEC Bento Quirino</p>
+                    <p><strong>Period:</strong> 2021 - 2022</p>
+                    <p>I got my certificate as a Techinician when I was at High School, It was a great experiece and very good for my Professional
+                        development as student and profissional. I learned about programming logic, IDE's, how to create a project, operators, conditionals
+                        , a most of things around the IT world. At final course, I had my final paper, that was a website with the objective to teach the children about sustainability, using
+                        html, javascript and bootstrap. 
+                    </p>
+                </div>
+                <br>
+                <div class="degree-item">
+                    <h3>Technologist/bachelor's in Analysis and Development Systems</h3>
+                    <p><strong>School:</strong> FATEC Campinas</p>
+                    <p><strong>Period:</strong> 2021 - 2025</p>
+                    <p>I got my technologist/bachelor's in Analysis and Development Systems. It was amazing, a great experience to improve my knowledges 
+                        in IT, with development, work in group, to manage a project and group, IA, Mobile development and an others things.  
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="container">
+                <h2>Skills</h2>
+                <ul class="skills-list">
+                    <li>Full Stack JS</li>
+                    <li>Javascript, HTML and CSS</li>
+                    <li>Node.js</li>
+                    <li>ITIL</li>
+                    <li>React, Vue.js</li>
+                    <li>Mongo, Express</li>
+                    <li>Cloud, Maintance and Development ServiceNow</li>
+                    <li>C#, Java, Kotlin, PHP, C, Python *These Lenguages I saw at College. </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2>Contact</h2>
+                <p>Email: gabrielodorcik@gmail.com</p>
+                <p>Telefone: +55 (19) 98955-9017</p>
+                <p>LinkedIn: <a href="#">linkedin.com/in/gabrielodorcik</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Gabriel Odorcik. All rights reserved.</p>
+        </div>
+    </footer>
+    <button onclick="topFunction()" id="scrollTopBtn" title="Voltar ao topo">↑</button>
+</body>
+
+<script>
+    // Adicionar um botão para rolar para o topo da página
+window.onscroll = function() {
+    scrollFunction();
+};
+
+function scrollFunction() {
+    const btn = document.getElementById("scrollTopBtn");
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        btn.style.display = "block";
+    } else {
+        btn.style.display = "none";
+    }
+}
+
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
+</script>
+</html>
